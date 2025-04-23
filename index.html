@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- ✅ Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- ✅ Navbar Component -->
+    <nav class="bg-gray-900 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Brand Name -->
+        <h1 class="text-xl font-bold">MyPortfolio</h1>
+
+
+        <!-- TODO: Create ul element for navigation links -->
+        <!-- Hint: Use flex and space-x-4 for spacing -->
+         <ul class="flex space-x-4">
+          <li><a href="#about" class="hover:text-red-400">About</a></li>
+          <li><a href="#skills" class="hover:text-red-400">Skills</a></li>
+          <li><a href="#projects" class="hover:text-red-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-red-400">Contact</a></li>
+         </ul>
+      </div>
+    </nav>
+
+
+    <!-- Hero section with your image, name and title -->
+    <section class="bg-gray-100 py-12">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4"
+      >
+        <!-- Profile Image -->
+        <div class="w-40 h-40 mb-6 md:mb-0">
+          <img
+            src="https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Profile"
+            class="rounded-full object-cover w-full h-full shadow-lg"
+          />
+        </div>
+
+
+        <!-- Intro Text -->
+        <div class="text-center md:text-left">
+          <h2 class="text-3xl font-bold text-gray-800">
+            Hi, I'm <span class="text-red-600">Vishal</span>
+          </h2>
+          <p class="text-xl text-gray-600 mt-2 mb-4">A Passionate Web Developer</p>
+
+
+          <!-- TODO: Add a button that says "Download Resume" -->
+          <a href="./resume/sample-resume.pdf" download class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+
+   
+    <!-- ✅ About Me Section -->
+    <section id="about" class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+          About Me
+        </h2>
+
+
+        <!-- TODO: Add a paragraph describing yourself. Make sure it's center aligned and uses max-w-xl -->
+         <p class="text-gray-600 text-center max-w-xl mx-auto">
+          I am a passionate web developer with a love for building responsive
+          and user-friendly web applications. I enjoy learning new technologies
+          and turning ideas into reality through clean and efficient code.
+         </p>
+      </div>
+    </section>
+
+
+   
+    <!-- ✅ Skills / Tech Stack Section -->
+    <section id="skills" class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">
+          Tech Stack
+        </h2>
+
+
+        <!-- TODO: Create a responsive grid of skills using Tailwind -->
+        <!-- Hint: Use grid, gap-4, grid-cols-2 for mobile and grid-cols-4 for larger screens -->
+         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-white shadow-md p-4 rounded text-center">HTML</div>
+          <div class="bg-white shadow-md p-4 rounded text-center">CSS</div>
+          <div class="bg-white shadow-md p-4 rounded text-center">JavaScript</div>
+          <div class="bg-white shadow-md p-4 rounded text-center">React</div>
+          <div class="bg-white shadow-md p-4 rounded text-center">Node.js</div>
+          <div class="bg-white shadow-md p-4 rounded text-center">Express</div>
+          <div class="bg-white shadow-md p-4 rounded text-center">MongoDB</div>
+          <div class="bg-white shadow-md p-4 rounded text-center">TailwindCSS</div>
+         </div>
+      </div>
+    </section>
+
+
+   
+    <!-- ✅ Projects Section -->
+    <section id="projects" class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">
+          Projects
+        </h2>
+
+
+        <!-- TODO: Create a responsive grid of project cards (name, description, button) -->
+        <!-- Hint: Use grid-cols-1 md:grid-cols-3, gap-6 -->
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-gray-100 p-6 rounded shadow">
+            <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+            <p class="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos dolore aspernatur aliquid itaque sequi quas ipsum. Omnis, quis explicabo?
+            </p>
+            <a href="#" class="bg-red-600 text-white px-4 py-2 rounded hover hover:bg-red-700">Live Demo</a>
+          </div>
+          <div class="bg-gray-100 p-6 rounded shadow">
+            <h3 class="text-xl font-semibold mb-2">Foodies Delight</h3>
+            <p class="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos dolore aspernatur aliquid itaque sequi quas ipsum. Omnis, quis explicabo?
+            </p>
+            <a href="#" class="bg-red-600 text-white px-4 py-2 rounded hover hover:bg-red-700">View Code</a>
+          </div>
+          <div class="bg-gray-100 p-6 rounded shadow">
+            <h3 class="text-xl font-semibold mb-2">Expense Tracker</h3>
+            <p class="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos dolore aspernatur aliquid itaque sequi quas ipsum. Omnis, quis explicabo?
+            </p>
+            <a href="#" class="bg-red-600 text-white px-4 py-2 rounded hover hover:bg-red-700">Live Demo</a>
+          </div>
+         </div>
+      </div>
+    </section>
+
+
+   
+    <!-- ✅ Contact Me Section -->
+    <section id="contact" class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4 max-w-xl">
+        <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">
+          Contact Me
+        </h2>
+
+
+        <!-- TODO: Create a simple form with name, email, message input fields and a submit button -->
+        <!-- Hint: Use input, textarea with Tailwind form styling classes -->
+         <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+          <input type="email" placeholder="Your Email" class="w-full border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+          <textarea placeholder="Your Message" rows="4" class="w-full border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+          <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Send Message</button>
+         </form>
+      </div>
+    </section>
+
+
+   
+    <!-- ✅ Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-sm">&copy; 2025 Vishal. All rights reserved.</p>
+
+
+        <!-- TODO: Add social media links like GitHub or LinkedIn with hover effects -->
+         <div class="mt-4 flex justify-center space-x-4">
+          <a
+            href="#"
+            class="hover:text-red-400"
+            target="_blank"
+          >Github</a>
+          <a
+            href="#"
+            class="hover:text-red-400"
+            target="_blank"
+          >LinkedIn</a>
+          <a
+            href="#"
+            class="hover:text-red-400"
+            target="_blank"
+          >Leetcode</a>
+         </div>
+      </div>
+    </footer>
+  </body>
+</html>
